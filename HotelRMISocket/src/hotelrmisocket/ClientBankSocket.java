@@ -25,11 +25,6 @@ public class ClientBankSocket {
             int clientAmount = 0;
 
             while (true) {
-//                clientAmount += 1;// ciclo al infinito para elfuncionamiento del server
-//                if(clientAmount >= 3){
-//                   break;
-//                }
-                
 //              First Client
                 client1 = server.accept();
                 toClient1 = new PrintStream(client1.getOutputStream());
@@ -37,16 +32,18 @@ public class ClientBankSocket {
                 toClient1.println("1");
                 toClient1.flush(); 
                 toClient1.println("300");
+                
 //              Second Client
                 client2 = server.accept();
-                toClient2 = new PrintStream(client1.getOutputStream());
+                toClient2 = new PrintStream(client2.getOutputStream());
                 toClient2.flush();
                 toClient2.println("2");
                 toClient2.flush(); 
                 toClient2.println("400");
+                
 //              Third Client
                 client3 = server.accept();
-                toClient3 = new PrintStream(client1.getOutputStream());
+                toClient3 = new PrintStream(client3.getOutputStream());
                 toClient3.flush();
                 toClient3.println("3");
                 toClient3.flush(); 
@@ -56,4 +53,12 @@ public class ClientBankSocket {
             System.out.println(e.getMessage());
         }
     }
+    public void reservationCheck(int clientId, double totalAmount){
+        if((clientId == 1 && totalAmount <= 300)||(clientId == 2 &&totalAmount <= 400) || (clientId == 3 &&totalAmount <= 1000)){
+            System.out.println("Successful Reservation!!!");
+        }else {
+            System.out.println("Failed Reservation :(");
+        }
+    }
+    
 }
