@@ -13,7 +13,11 @@ import java.util.Date;
 public class CentralBankServer extends UnicastRemoteObject
         implements ICentralBank {
 
-    public static final int CENTRAL_BANK_PORT = 5002;
+    public static final int CENTRAL_BANK_PORT = 1099;
+
+    CentralBankServer() throws java.rmi.RemoteException {
+        super();
+    }
 
     public static void main(String args[]) {
         try {
@@ -25,10 +29,6 @@ public class CentralBankServer extends UnicastRemoteObject
         } catch (Exception e) {
             e.printStackTrace();
         }
-    }
-
-    CentralBankServer() throws java.rmi.RemoteException {
-        super();
     }
 
     @Override

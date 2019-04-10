@@ -22,6 +22,7 @@ public class ClientRMI {
             System.out.println("The client Identifier is: " + id);
             double totalAmount = Double.parseDouble(fromServer.readLine());
             System.out.println("The total Amount is: " + totalAmount);
+            
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
