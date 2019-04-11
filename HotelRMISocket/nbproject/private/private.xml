@@ -4,8 +4,6 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/Users/laurar/Desktop/Facultad/Sis258-Projects/HotelRMISocket/src/hotelrmisocket/ClientRMI.java</file>
-            <file>file:/Users/laurar/Desktop/Facultad/Sis258-Projects/HotelRMISocket/src/hotelrmisocket/IReservationServer.java</file>
-            <file>file:/Users/laurar/Desktop/Facultad/Sis258-Projects/HotelRMISocket/src/hotelrmisocket/ICentralBank.java</file>
             <file>file:/Users/laurar/Desktop/Facultad/Sis258-Projects/HotelRMISocket/src/hotelrmisocket/ClientBankSocket.java</file>
             <file>file:/Users/laurar/Desktop/Facultad/Sis258-Projects/HotelRMISocket/src/hotelrmisocket/CentralBankServer.java</file>
             <file>file:/Users/laurar/Desktop/Facultad/Sis258-Projects/HotelRMISocket/src/hotelrmisocket/ReservationServer.java</file>

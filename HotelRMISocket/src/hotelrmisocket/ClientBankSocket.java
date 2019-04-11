@@ -19,6 +19,7 @@ public class ClientBankSocket {
             Socket client1;
             Socket client2;
             Socket client3;
+            Socket clientServer;
             PrintStream toClient1;
             PrintStream toClient2;
             PrintStream toClient3;
@@ -48,6 +49,9 @@ public class ClientBankSocket {
                 toClient3.println("3");
                 toClient3.flush();
                 toClient3.println("1000");
+                
+                
+                
             }
         } catch (IOException e) {
             System.out.println(e.getMessage());

@@ -78,7 +78,5 @@ public class ReservationServer extends UnicastRemoteObject implements IReservati
 //        Socket reservationServerClient = new Socket("localhost", CLIENT_BANK_SERVER_PORT);
 //        BufferedReader fromServer = new BufferedReader(new InputStreamReader(reservationServerClient.getInputStream()));
 //        toServer.println(cadena);  //mandar alservidor   
-    }
-    
-
+    }    
 }
